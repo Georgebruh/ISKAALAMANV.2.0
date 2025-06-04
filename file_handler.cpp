@@ -11,16 +11,7 @@ const std::string NOTE_CONTENT_END_DELIMITER = "---CONTENT_END---";
 const std::string CLASS_SCHEDULE_FILE = "schedule.dat";
 const std::string TASKS_FILE = "tasks.dat";
 
-// Note: The actual global data vectors (classSchedule, tasks, etc.)
-// must be defined (not extern) in one .cpp file. For now, file_handler.cpp
-// will assume they are defined elsewhere (e.g., in their respective feature .cpp files
-// or in iskaalaman.cpp if they remain truly global).
-// For this refactoring step, we are only moving the functions.
-// The definition of these global vectors will be handled when we refactor
-// scheduler_planner.cpp and study_hub.cpp.
-
-
-// --- File Handling Implementations for Scheduler and Tasks ---
+lementations for Scheduler and Tasks ---
 
 void saveClassScheduleToFile() {
     std::ofstream outfile(CLASS_SCHEDULE_FILE);
