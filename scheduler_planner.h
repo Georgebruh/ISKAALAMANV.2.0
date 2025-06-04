@@ -5,10 +5,6 @@
 #include <vector>
 #include <iostream> // For std::cout, std::cin in menu/display functions
 #include <set>      // For std::set in addTask subject handling (can be forward declared if only in .cpp)
-// Forward declare if only pointers/references are used in header. Otherwise, include full header.
-// For now, assume full definitions might be indirectly needed by users of this header.
-// #include "utils.h" // For utility function declarations if they were not moved to utils.h yet
-// #include "file_handler.h" // For file operations if needed by functions declared here
 
 // --- Data structures ---
 struct ClassDetails {
